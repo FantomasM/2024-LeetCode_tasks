@@ -118,7 +118,7 @@ public:
     }
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         return simple_particular_merging(nums1,nums2);
-            
+
     }
 };
 
