@@ -16,7 +16,7 @@ struct ListNode {
 
 class Solution {
 public:
-    int evaluate_carry(bool & carry) {
+    `int evaluate_carry(bool & carry) {
         if(carry) {
             return 1;
         }
@@ -109,7 +109,7 @@ public:
         }
         add_last_carry(&cur_result,carry);
         return result;
-    }
+    }`
 };
 void delete_List(ListNode * list) {
     if(list==nullptr) {
