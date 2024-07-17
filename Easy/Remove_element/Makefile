@@ -4,13 +4,13 @@ LD=g++
 LDFLAGS=-Wall -pedantic -std=c++17 -Wno-long-long -Werror -z noexecstack 
 
 
-SRCS=$(wildcard src/*.cpp)
-OBJS=$(patsubst src/%.cpp, %.o, $(SRCS))
+SRCS=$(wildcard src/*.c)
+OBJS=$(patsubst src/%.c, %.o, $(SRCS))
 
 Task: $(OBJS)
 	$(LD) $(LDFLAGS) $^ -o a.out
 
-%.o: src/%.cpp
+%.o: src/%.c
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 compile: Task
